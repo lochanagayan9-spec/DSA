@@ -9,12 +9,12 @@ class Solution {
                 int k=j+1;
                 int l=nums.length-1;
                 while(k<l){
-                long sum=nums[i];
-                sum+=nums[j];
-                sum+=nums[k];
-                sum+=nums[l];
-                if(sum==target){
-                   List<Integer> temp = new ArrayList<>(
+                  long sum=nums[i];
+                  sum+=nums[j];
+                  sum+=nums[k];
+                  sum+=nums[l];
+                  if(sum==target){
+                    List<Integer> temp = new ArrayList<>(
                             Arrays.asList(
                                 nums[i],
                                 nums[j],
@@ -28,8 +28,8 @@ class Solution {
 
                 }
                 
-                else if(sum<target)k++;
-                else l--;
+                  else if(sum<target)k++;
+                  else l--;
             }
             }
         }
